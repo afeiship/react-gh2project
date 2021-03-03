@@ -5,4 +5,19 @@ $react-gh2project-options: () !default;
   height: 56px;
   display: inline-block;
   vertical-align: middle;
+  opacity: 0.9;
+  transition: all 0.3s;
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }

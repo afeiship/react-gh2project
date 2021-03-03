@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
+import noop from '@jswork/noop';
 import objectAssign from 'object-assign';
 
 const CLASS_NAME = 'react-gh2project';
@@ -21,8 +21,7 @@ export default class ReactGh2project extends Component {
     href: PropTypes.string
   };
 
-  static defaultProps = {
-  };
+  static defaultProps = {};
 
   get href() {
     const { href } = this.props;
@@ -53,3 +52,4 @@ export default class ReactGh2project extends Component {
     );
   }
 }
+
